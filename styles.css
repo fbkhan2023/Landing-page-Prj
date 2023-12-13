@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+#header-img {
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eeeeee;
+    border-bottom: 2px solid purple;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+    color: black;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.page-heading {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.form {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#email {
+    height: 32px;
+    width: 250px;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid rgb(153, 151, 151);
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(90, 92, 2);
+    font-weight: 900;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(176, 179, 7);
+    cursor: pointer;
+    color:black;
+}
+
+/* Feature section */
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+}
+#features{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#features .group{
+    display: flex;
+    /* padding: 10px; */
+    margin: auto;
+}
+
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 15vw;
+    color: darkorange;
+    font-size: 2.5rem;
+}
+
+
+#features .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    padding: 5px;
+}
+
+#video{
+    display: flex;
+    /* width: 50vw; */
+    margin:20px auto;
+    justify-content: center;
+    
+}
+
+/* Pricing Section */
+
+.pricing{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    margin: auto;
+    /* padding: 10px; */
+    position: relative;
+}
+
+.price-card{
+    border: 1px solid black;
+    text-align: center;
+    /* padding: 20px; */
+    margin: 10px;
+    width: 30%;
+    height: 300px;
+    
+}
+
+.service-title{
+    background-color: rgba(128, 128, 128, 0.514);
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price-card .price-value{
+    padding:5px;
+    font-size: 1.5rem;
+}
+
+.service-text ol li{
+    padding:5px;
+    display: block;
+}
+
+.service-btn{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(90, 92, 2);
+    font-weight: 900;
+    color: white;
+    margin-top: 20px;
+
+}
+.service-btn:hover {
+    background-color: rgb(176, 179, 7);
+    cursor: pointer;
+    color:black;
+}
+
+/* Footer Section */
+
+.footer{
+    height: 100px;
+    background-color: rgb(53, 75, 16);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgb(2, 37, 2);
+    
+}
+ ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.copyright{
+    color: bisque;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+
+
+/* ------------ ------------------ -------- */
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        min-height: 100px;
+        flex-direction: column;
+        z-index: 100;
+    }
+
+    #header-img{
+        display: none;
+    }
+
+    .pricing{
+        display: block;
+        margin:10px;
+    }
+
+    .price-card{
+        width: 60vw;
+        margin:10px auto;
+    }
+}
