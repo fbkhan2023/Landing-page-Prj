@@ -193,13 +193,18 @@ li {
 .footer{
     height: 100px;
     background-color: rgb(53, 75, 16);
-    display: flex;
-    justify-content:space-between;
     padding: 20px;
     margin-top: 20px;
     border-top: 1px solid rgb(2, 37, 2);
-    
+    }
+#footer {
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    color:white;
+    font-style:oblique;
 }
+
  ul li a{
     text-decoration: none;
     padding: 10px;
